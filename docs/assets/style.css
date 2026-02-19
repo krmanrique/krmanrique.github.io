@@ -29,7 +29,7 @@ body {
 .certificados-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 columnas */
-  gap: 75px;
+  gap: 40px; /* Aumento el espacio entre las tarjetas */
   width: 90%;  /* Ampliar el contenedor */
   padding: 30px;
   margin: 0 auto; /* Centrar el contenedor */
@@ -42,17 +42,12 @@ body {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5); /* Sombra más suave */
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: 125%;
-  height: 400px; /* Aumentar altura de la tarjeta */
+  width: 100%; /* Ancho 100% para las tarjetas */
+  height: 500px; /* Ajustar la altura de las tarjetas */
   display: flex;
   flex-direction: column;
   justify-content: space-between; /* Para ajustar el contenido verticalmente */
   overflow: hidden; /* Evitar scroll */
-}
-
-.certificado:hover {
-  transform: translateY(-15px); /* Efecto hover que eleva más la tarjeta */
-  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.6); /* Aumenta la sombra al hacer hover */
 }
 
 .certificado h3 {
@@ -65,6 +60,15 @@ body {
   font-size: 1.2rem;
   margin-bottom: 20px;
   color: white;
+}
+
+/* ======== Estilo para las imágenes (certificados) ======== */
+.certificado img {
+  width: 100%;  /* Asegura que la imagen ocupe todo el ancho disponible */
+  height: 250px; /* Ajusta la altura de las imágenes */
+  object-fit: cover; /* Mantiene la proporción de la imagen sin distorsionar */
+  border-radius: 10px;
+  margin-bottom: 15px; /* Añade espacio entre la imagen y el botón */
 }
 
 .certificado .btn {
@@ -82,13 +86,12 @@ body {
   background-color: #128fa2;
 }
 
-/* ======== Estilo para los iframes (PDF incrustado) ======== */
+/* ======== Estilo para los iframes (si los usas) ======== */
 iframe {
   margin-bottom: 20px;
   border-radius: 10px;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
-  height: 400px;  /* Aumentar altura de los iframes */
+  height: 300px;  /* Aumentar altura de los iframes */
   width: 100%;
   object-fit: cover; /* Asegura que la imagen se ajuste adecuadamente dentro del contenedor */
 }
-
