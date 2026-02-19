@@ -6,12 +6,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>👾 Kevin Manrique - Portafolio</title>
   <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 </head>
 
 <body>
+  <!-- Contenedor de burbujas para el fondo animado -->
+  <div class="bubbles-container">
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+  </div>
+
   <div class="container text-center py-5">
-    <img src="img/kevin.jpg" alt="Kevin Manrique" class="backdrop linktree">
+    <img src="img/kevin.jpg" alt="Kevin Manrique" class="profile-image">
 
     <h1 class="mt-4">Kevin Manrique</h1>
     <p class="lead">Desarrollador de Software | Apasionado por la tecnología y el aprendizaje continuo</p>
@@ -19,11 +29,22 @@
 
     <div class="row justify-content-center mt-4">
       <div class="col-md-6">
-        <button onclick="location.href='https://www.linkedin.com/in/kevin-manrique-321641360/'" class="btn btn-outline-light btn-block my-2">Perfil de LinkedIn</button>
-        <button onclick="location.href='https://github.com/krmanrique'" class="btn btn-outline-light btn-block my-2">GitHub</button>
-        <button onclick="location.href='https://www.instagram.com/krmanrrique/'" class="btn btn-outline-light btn-block my-2">Instagram</button>
-        <button onclick="location.href='HV_Kevin_OK.pdf'" class="btn btn-outline-light btn-block my-2">Descargar Hoja de Vida</button>
-        <button onclick="location.href='certificados.html'" class="btn btn-outline-light btn-block my-2">Ver Certificados</button>
+        <!-- Botones mejorados con íconos de Font Awesome -->
+        <button onclick="location.href='https://www.linkedin.com/in/kevin-manrique-321641360/'" class="btn btn-outline-light btn-block my-2">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </button>
+        <button onclick="location.href='https://github.com/krmanrique'" class="btn btn-outline-light btn-block my-2">
+          <i class="fab fa-github"></i> GitHub
+        </button>
+        <button onclick="location.href='https://www.instagram.com/krmanrrique/'" class="btn btn-outline-light btn-block my-2">
+          <i class="fab fa-instagram"></i> Instagram
+        </button>
+        <button onclick="location.href='HV_Kevin_OK.pdf'" class="btn btn-outline-light btn-block my-2">
+          <i class="fas fa-file-pdf"></i> Descargar Hoja de Vida
+        </button>
+        <button onclick="location.href='certificados.html'" class="btn btn-outline-light btn-block my-2">
+          <i class="fas fa-certificate"></i> Ver Certificados
+        </button>
       </div>
     </div>
 
@@ -35,6 +56,7 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
